@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P2P Bomberman</title>
+
+    <link href="./css/index.css" type="text/css" rel="stylesheet" />
+
+    <script src="src/lib/peerjs.min.js"></script>
+</head>
+<body>
+    <div class="users flex-row">
+        <div class="users__form users__player flex-column">
+            <label class="users__label" for="userIdInput">Your ID: </label>
+
+            <div class="flex-column">
+                <input class="users__input w-100" id="userNameInput" placeholder="Yours name">
+                <div class="flex-row">
+                    <input class="users__input w-100" id="userIdInput" placeholder="Yours ID" disabled>
+                    <button data-copy-paste="from:#userIdInput">Copy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="users__form flex-column">
+            <label class="users__label" for="messagesOutput">Chat: </label>
+            <textarea class="users__messages" id="messagesOutput" cols="30" rows="10"></textarea>
+
+            <div class="flex-row">
+                <input class="users__input w-100" id="messageInput">
+                <button id="messageSendButton">Send</button>
+            </div>
+        </div>
+
+        <div class="users__form users__opponent flex-column">
+            <label class="users__label" for="interlocutorIdInput">Interlocutor ID:</label>
+
+            <div class="flex-column">
+                <div class="flex-row">
+                    <input class="users__input w-100" id="interlocutorIdInput" placeholder="Interlocutor ID">
+                    <button data-copy-paste="to:#interlocutorIdInput">Paste</button>
+                </div>
+                <button id="connectButton">Connect</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>

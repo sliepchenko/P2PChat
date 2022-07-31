@@ -1,0 +1,33 @@
+.w-100 {
+  width: 100%;
+}
+
+button {
+  font-size: 2rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.users {
+  justify-content: space-between;
+  align-items: stretch;
+}
+.users__form {
+  width: 100%;
+}
+.users__label {
+  font-size: 2rem;
+}
+.users__input {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=index.css.map */
